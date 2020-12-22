@@ -11,7 +11,7 @@
 const fs = require('fs');
 const path = require('path');
 const {Pool} = require('pg');
-const {readdir, unlink, writeFile} = require('fs/promises');
+const {readdir, unlink, writeFile} = require('fs').promises;
 const startOfYear = require('date-fns/startOfYear');
 const credentials = require('../credentials.json');
 
